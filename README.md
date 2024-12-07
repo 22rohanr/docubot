@@ -1,3 +1,33 @@
+# Docubot
+
+Docubot is an automated documentation tool that uses GitHub Actions to generate comprehensive documentation for your code. When changes are pushed to the main branch, GitHub Actions triggers an API endpoint that automatically documents your code.
+
+## Features
+
+- **Automated Documentation**: Automatically generates documentation for your code when changes are detected.
+- **GitHub Actions Integration**: Uses GitHub Actions to streamline the documentation process.
+- **Endpoint Integration**: Hits a specified endpoint to fetch and document code changes.
+
+## Getting Started
+
+### Installation
+
+1. **Set up GitHub Actions**:
+
+   - Ensure you have a GitHub repository set up.
+   - Create a `.github/workflows/documentation.yml` file in your repository.
+
+2. **Set up files**:
+   - Ensure that you have created a `documentation.md` file in the top level of your repository.
+
+3. **Github Actions Permissions**:
+   - Ensure your project gives Github actions the permission to read, write, and push to main.
+   
+### GitHub Actions Workflow
+
+Here is an example workflow configuration:
+
+```yaml
 name: Combined Workflow
 
 on:
@@ -93,3 +123,9 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+### Usage
+
+1. Push changes to the main branch of your repository.
+2. GitHub Actions will trigger and run the workflow to update your documentation automatically.
