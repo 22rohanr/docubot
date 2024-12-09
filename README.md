@@ -1,6 +1,6 @@
 # Docubot
 
-Docubot is an automated documentation tool that uses GitHub Actions to generate comprehensive documentation for your code. When changes are pushed to the main branch, GitHub Actions triggers an API endpoint that automatically documents your code.
+Docubot is an automated documentation tool that uses GitHub Actions to generate comprehensive documentation for your code. When changes are pushed to the main branch, GitHub Actions triggers an API endpoint that automatically documents your code. A sandbox repo testing it can be found here: https://github.com/22rohanr/docubotTest
 
 ## Features
 
